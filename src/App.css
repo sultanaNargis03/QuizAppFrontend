@@ -1,0 +1,232 @@
+.app {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  /* border: 1px solid #ccc;
+  border-radius: 8px; */
+}
+.menu {
+  margin-left: 40px;
+  margin-top: 30px;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+}
+
+.root1 {
+  background-color: chocolate;
+}
+
+.quiz-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.quiz-list li {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.question-list li {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  background-color: #07f433;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.addQuestion {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px whitesmoke;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+}
+
+.addQuestion h2 {
+  text-align: center;
+  color: #d11010;
+  margin-bottom: 20px;
+}
+
+.addQuestion form {
+  display: grid;
+  grid-gap: 20px;
+}
+
+.addQuestion label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.addQuestion input[type="text"],
+.addQuestion input[type="email"] {
+  width: 100%;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.addQuestion button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.addQuestion button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .addQuestion {
+    padding: 10px;
+  }
+
+  .addQuestion form {
+    grid-gap: 15px;
+  }
+}
+
+.editQuestion {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px whitesmoke;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+}
+
+.editQuestion h2 {
+  text-align: center;
+  color: #d11010;
+  margin-bottom: 20px;
+}
+
+.editQuestion form {
+  display: grid;
+  grid-gap: 20px;
+}
+
+.editQuestion label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.editQuestion input[type="text"],
+.editQuestion input[type="email"] {
+  width: 100%;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.editQuestion button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.editQuestion button:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .editQuestion {
+    padding: 15px;
+  }
+
+  .editQuestion form {
+    grid-gap: 15editQuestion;
+  }
+}
+
+body {
+  background: linear-gradient(-45deg, black, red, rgb(4, 94, 4));
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: white;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
